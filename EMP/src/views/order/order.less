@@ -1,0 +1,343 @@
+.order{
+    &-main-con{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    &-mainlist-con{
+        position: absolute;
+        left: 0;
+        top: 16px;
+        width: 305px;
+        bottom: 0;
+        background: #f5f5f6;
+        border:1px solid #e9eaec;
+        overflow: auto;
+        li{
+            padding:12px 10px;
+            cursor: pointer;
+            img{
+                width: 28px;
+                height: 28px;
+                float: left;
+            }
+            .right-cont{
+                padding-left: 40px;
+                p{
+                    color: #888;
+                    padding-top: 6px;
+                    &:first-child{
+                        font-size: 16px;
+                        color: #656565;
+                        padding-top: 0;
+                    }
+                }
+                .countdown{
+                     border-left: 1px solid #c0c8d4;
+                     color: #2d8cf0;
+                     padding-left: 6px;
+                     margin-left: 6px;
+                }
+            }
+        }
+        li.active{
+            background: #fff;
+        }
+    }
+    &-content-con{
+        position: absolute;
+        left: 305px;
+        top: 16px;
+        bottom: 0;
+        right: 0;
+        //margin-left: 305px;
+        overflow: auto;
+        padding:0 15px;
+        .box{
+            margin-bottom: 16px;
+            background: #fff;
+            border:1px solid #e9eaec;
+            &-top{
+                line-height: 48px;
+                height: 48px;
+                border-bottom: 1px solid #e9eaec;
+                background: #f5f5f6;
+                .title{
+                    color: #656565;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-right: 44px;
+                    margin-left: 15px;
+                }
+                .c-red{
+                    color:#f40000;
+                    font-style: normal;
+                }
+                .save-btn{
+                    float: right;
+                    width: 80px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 0;
+                    border-left: 1px solid #e9eaec;
+                    font-size: 14px;
+                    color: #666;
+                    background: url(../../images/baocun.png) no-repeat 18px center;
+                    padding-left: 42px;
+                    margin-top: 9px;
+                    cursor: pointer;
+                    margin-right: 15px;
+                }
+            }
+            &-con{
+                position: relative;
+                .box-top{
+                    background: #f8f8f9;
+                    .title{
+                        font-weight: normal;
+                    }
+                }
+                .box-l{
+                    width: 50%;
+                    padding-right: 8px;
+                    float: left;
+                }
+                .box-r{
+                    width: 50%;
+                    padding-left: 8px;
+                    float: right;
+                }
+                .img-view{
+                    overflow: hidden;
+                    &-item{
+                        float: left;
+                        padding: 6px;
+                        height: 128px;
+                        img{
+                            width: 90px;
+                            height: 90px;
+                            display: block;
+                        }
+                        p{
+                            line-height: 24px;
+                            color: #666;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .pd-12{
+                padding:12px;
+            }
+            .order-form{
+                padding:20px 0;
+                &:after{
+                    content: "";
+                    clear: both;
+                    display: block;
+                }
+                .ivu-form-item{
+                    margin-bottom: 5px;
+                    padding:0 3%;
+                    width: 33%;
+                    box-sizing: border-box;
+                    float: left;
+                    @media(max-width:1800px){
+                        width: 49%;
+                    }                                     
+                    @media(max-width:1400px){
+                        width: 98%;
+                    }                                     
+                    input:disabled{
+                        color: #666;
+                    }
+                }
+                .cost-input-item{
+                    .ivu-form-item-content{
+                        position: relative;
+                        &:after{
+                            content:'元';
+                            color:#999;
+                            position: absolute;
+                            height: 32px;
+                            right: 16px;
+                            top: 0;
+                        }
+                    }
+                    input{
+                        padding-right: 40px;
+                    }
+                }
+                .line{
+                    width: 100%;
+                    border-bottom: 1px solid #f0f0f0;
+                    margin-bottom: 20px;
+                    height: 20px;
+                    clear: both;
+                }
+            }
+            .order-form-right{
+                padding:20px 40px;
+                border-left: 1px solid #f0f0f0;
+                width: 280px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                overflow: auto;
+                .status{
+                    margin-bottom: 10px;
+                    background: #2d8cf0;
+                    border:1px solid #2080e6;
+                    border-radius: 3px;
+                    font-size: 24px;
+                    color: #fff;
+                    text-align: center;
+                    height: 70px;
+                    line-height: 70px;
+                    img{
+                        height: 26px;
+                        margin: 17px 24px 0 0;
+                        vertical-align: -4px;
+                    }
+                }
+                .service{
+                    margin-bottom: 10px;
+                    border:1px solid #e9eaec;
+                    border-radius: 3px;
+                    .top{
+                        background: #b9bcc2;
+                        text-align: center;
+                        color: #fff;
+                        height: 32px;
+                        line-height: 32px;
+                    }
+                    .con{
+                        padding:5px 8px;
+                        line-height: 20px;
+                        color: #666;
+                    }
+                }
+            }
+            .closeBox{
+                height: 0;
+                overflow: hidden;
+            }
+            .box-toggle{
+                text-align: center;
+                font-size: 14px;
+                color: #2d8cf0;
+                height: 40px;
+                border:0;
+                width: 120px;
+                background: no-repeat center transparent;
+                cursor: pointer;
+                display: none;
+            }
+            .box-toggle.off{
+                background-image: url(../../images/toggle_off.png)
+            }
+            .box-toggle.on{
+                background-image: url(../../images/toggle_on.png)
+            }
+            .box-toggle.active{
+                display: inline-block;
+            }
+            .clear{
+                clear: both;
+            }    
+            .text-c{
+                text-align: center;
+            }   
+        }
+        .table{
+            table{
+                border-collapse:collapse;
+                border-spacing:0;
+                width: 100%;
+            }
+            th,td{
+                padding:10px 14px;
+                text-align: center;                
+                border: 0;
+            }
+            th{
+                height: 20px;
+                border-bottom: 1px solid #e9eaec;
+                background: #f8f8f9;                
+            }
+            button{
+                border: 0;
+                color: #2d8cf0;
+                background: none;
+                padding:0 6px;
+                border-left: 1px solid #2d8cf0;
+                border-radius: 0;
+                &:focus{
+                    box-shadow: none;
+                }
+                &:first-child{
+                    border: 0;
+                }
+            }
+
+        }
+        .tabs-nav{
+            margin-right: 44px;
+            .tab{
+                margin-top: 9px;
+                display: inline-block;
+                padding:0 15px;
+                color: #999;
+                border-right: 1px solid #dcdcdc;
+                height: 30px;
+                line-height: 30px; 
+                font-size: 14px;
+                cursor: pointer;
+                position: relative;
+                &:after{
+                    content:"";
+                    display: block;
+                    position: absolute;
+                    left: 15px;
+                    right: 15px;
+                    bottom: -8px;
+                    height: 2px;
+                    background: #656565;
+                    opacity: 0;
+                    transition: all .5s;
+                }                
+                &.active{
+                    color: #656565;
+                    font-weight: bold;
+                    &:after{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .btm-btns-place{
+            width: 100%;
+            height: 60px;
+        }
+        .btm-btns{
+            position: fixed;
+            bottom: 0;
+            left: 505px;
+            right: 0;
+            background: #fff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 1px 3px #e3e3e3;
+            z-index: 10;
+            .ivu-btn{
+                min-width: 120px;
+                height: 40px;
+                margin:0 5px;
+                font-size: 14px;
+            }
+        }
+    }
+}
